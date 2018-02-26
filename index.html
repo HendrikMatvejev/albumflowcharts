@@ -1,7 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
 	<title>Music Flowcharts</title>
 	<link href="style/index.css" type="text/css" rel="stylesheet" />
 	<link href="https://fonts.googleapis.com/css?family=Arvo|Work+Sans" rel="stylesheet">
@@ -10,58 +13,57 @@
 <body id="grid">
 	<nav id="navgrid">
 		<div class="navitem" id="title">
-			<a href="index.html">
-        Music Flowcharts
-        <span class="fullpanellink"></span>
-      </a>
+			<a>
+				Music Flowcharts
+				<span class="fullpanellink"></span>
+			</a>
 		</div>
 		<div class="navitem" id="genre">
-			<a href="genre.html">
-        Genre
-        <span class="fullpanellink"></span>
-      </a>
+			<a href="index.html">
+				Radiohead
+				<span class="fullpanellink"></span>
+			</a>
 		</div>
 		<div class="navitem" id="artist">
 			<a href="artist.html">
-        Artist
-        <span class="fullpanellink"></span>
-      </a>
+				Artist
+				<span class="fullpanellink"></span>
+			</a>
 		</div>
 		<div class="navitem" id="about">
 			<a href="about.html">
-        About
-        <span class="fullpanellink"></span>
-      </a>
+				About
+				<span class="fullpanellink"></span>
+			</a>
 		</div>
 	</nav>
-	<div class="rowcontainer" id="flowchartgrid">
-		<div class="flowchart" id="mucore">
-			<a target="_blank" href="mucore.html">
-				<img src="images/flowcharts/mucore.png" alt="/mu/core chart">
-			</a>
-			<div class="desc"></div>
+	<div class="container" id="albumgrid">
+		<h1 class="text-center" id="helptexttop">Listen to both, then make your choice.</h1>
+		<div class="albuminfo" id="okcinfo">
+			<p class="albuminfotext">"OK Computer" is the 3rd studio album by Radiohead which was released in 1997. It's an alternative rock album which has been cited by listeners, critics and musicians as one of the greatest albums of all time. The lyrics depict a world fraught with
+				rampant consumerism, social alienation, emotional isolation and political malaise.</p>
+			<ul style="list-style-type:none; padding-top:1em">
+				<li><a href="https://open.spotify.com/album/7dxKtc08dYeRVHt3p9CZJn"><h3>Spotify</h3></a></li>
+				<li><a href="https://www.youtube.com/playlist?list=PLkieEAqGXAKVE0smB9Qy9hoGqn89RO_vu"><h3>Youtube</h3></a></li>
+				<li><a href="https://genius.com/albums/Radiohead/Ok-computer"><h3>Genius</h3></a></li>
+				<li><a href="https://en.wikipedia.org/wiki/OK_Computer"><h3>Wikipedia</h3></a></li>
+			</ul>
 		</div>
+		<div class="text-center albumthumb rightalbum" id="album2">
+			<a target="_blank" href="">
+				<img  class="albumimg" src="images/radiohead/ok_computer.jpg" alt="OK Computer">
+			</a>
+			<h4 class="desc">OK Computer</h4>
+		</div>
+		<div class="infoicon"><img src="images/infoicon50px.png"/></div>
 
-		<div class="flowchart" id="blackmetal">
-			<a target="_blank" href="https://vignette3.wikia.nocookie.net/4chanmusic/images/8/87/Blackmetal2.jpg/revision/latest?cb=20160911153919">
-				<img src="images/logos/blackmetal.png" alt="Black Metal Flowchart">
+		<div class="text-center albumthumb leftalbum" id="album3">
+			<a target="_blank" href="">
+				<img src="images/radiohead/kid_a.jpg" alt="Kid A">
 			</a>
-			<div class="desc"></div>
+			<h4 class="desc">Kid A</h4>
 		</div>
-
-		<div class="flowchart" id="shoegaze">
-			<a target="_blank" href="https://vignette4.wikia.nocookie.net/4chanmusic/images/7/70/Shugazi.jpg/revision/latest?cb=20160410184843">
-				<img src="images/logos/shoegaze.png" alt="Shoegaze Flowchart">
-			</a>
-			<div class="desc"></div>
-		</div>
-
-		<div class="flowchart" id="hiphop">
-			<a target="_blank" href="https://vignette4.wikia.nocookie.net/4chanmusic/images/9/96/Hip_Hop_Flowchart_2.0.jpg/revision/latest?cb=20170526053208">
-				<img src="images/logos/hiphop.png" alt="Hip Hop Flowcharts">
-			</a>
-			<div class="desc"></div>
-		</div>
+		<h2 id="choosetext">I liked <button onclick="showNextAlbum()">OK Computer</button> / <button>Kid A</button> / <button>both</button>.</h2>
 	</div>
 </body>
 
